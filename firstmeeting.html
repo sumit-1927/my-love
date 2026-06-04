@@ -1,0 +1,193 @@
+<!-- Save this file as firstmeeting.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our First Meeting ❤️</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg,#ffd1dc,#ff8fab);
+      overflow-x:hidden;
+      color:white;
+    }
+
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      position:relative;
+    }
+
+    .hero-content{
+      z-index:2;
+      animation:fadeIn 2s ease;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      font-weight:700;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      margin-top:15px;
+      max-width:700px;
+    }
+
+    .memory-box{
+      background:white;
+      color:#444;
+      border-radius:25px;
+      padding:40px;
+      margin-top:40px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .memory-box img{
+      width:100%;
+      border-radius:20px;
+      height:400px;
+      object-fit:cover;
+    }
+
+    .memory-text{
+      margin-top:25px;
+      line-height:1.9;
+      font-size:1.1rem;
+    }
+
+    .love-btn{
+      margin-top:25px;
+      padding:12px 35px;
+      border:none;
+      border-radius:50px;
+      background:#ff4d6d;
+      color:white;
+      font-weight:600;
+      transition:0.3s;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .love-btn:hover{
+      background:#e63956;
+      transform:scale(1.05);
+    }
+
+    .heart{
+      position:absolute;
+      font-size:25px;
+      animation:float 6s linear infinite;
+      opacity:0.8;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(100vh) scale(0);
+      }
+      100%{
+        transform:translateY(-10vh) scale(1.5);
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      .memory-box{
+        padding:20px;
+      }
+
+      .memory-box img{
+        height:250px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="heart" style="left:10%; animation-duration:5s;">❤️</div>
+  <div class="heart" style="left:25%; animation-duration:7s;">💖</div>
+  <div class="heart" style="left:50%; animation-duration:6s;">💕</div>
+  <div class="heart" style="left:75%; animation-duration:8s;">💘</div>
+  <div class="heart" style="left:90%; animation-duration:5s;">❤️</div>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-content">
+
+      <h1>Our First Meeting ❤️</h1>
+
+      <p>
+        That was the day my heart quietly chose you forever ✨
+      </p>
+
+      <div class="memory-box">
+
+        <img src="https://plain-apac-prod-public.komododecks.com/202606/04/Mg5fnMki2E00YV9wqw71/image.jpg" alt="">
+
+        <div class="memory-text">
+
+          <p>
+            I still remember the very first time we met my heartbeat is soo fast.
+            Everything felt different that day.
+            Maybe you didn't notice it, but my world became more beautiful after seeing you.
+          </p>
+
+          <p>
+            Your smile, your eyes, your voice — everything stayed in my mind.
+            Since that moment, every memory with you has become special to me ❤️
+          </p>
+
+          <p>
+            Meeting you was not just a coincidence,
+            it was the best moment of my life 💕
+          </p>
+
+        </div>
+
+        <a href="love.html" class="love-btn">
+          Forever With You 💖
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
